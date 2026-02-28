@@ -1,0 +1,31 @@
+{
+  "name": "amdproject",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koushalkarthik15/AMDhackathon-backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koushalkarthik15/AMDhackathon-backend/issues"
+  },
+  "homepage": "https://github.com/koushalkarthik15/AMDhackathon-backend#readme",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "openai": "^6.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
