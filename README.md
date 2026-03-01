@@ -27,46 +27,6 @@ The backend is the single source of truth for conversation state and planning lo
 
 ---
 
-## Project Structure
-
-Backend/
-├── src/
-│   ├── config/
-│   │   └── env.js                 # Environment variable configuration
-│   │
-│   ├── controllers/               # Handles HTTP request logic
-│   │   ├── chat.controller.js
-│   │   ├── plan.controller.js
-│   │   └── refine.controller.js
-│   │
-│   ├── routes/                    # API route definitions
-│   │   ├── chat.routes.js
-│   │   ├── plan.routes.js
-│   │   └── refine.routes.js
-│   │
-│   ├── services/                  # External integrations & session logic
-│   │   ├── chatbot.service.js     # Gemini API integration
-│   │   └── session.service.js     # In-memory session management
-│   │
-│   ├── utils/                     # Core business logic
-│   │   ├── activityDataset.js
-│   │   ├── confidenceEvaluator.js
-│   │   ├── constraintExtractor.js
-│   │   ├── planningEngine.js
-│   │   └── scheduleBuilder.js
-│   │
-│   ├── middleware/
-│   │   └── error.middleware.js
-│   │
-│   ├── app.js                     # Express app configuration
-│   └── server.js                  # Application entry point
-│
-├── .env                           # Environment variables
-├── list-models.js                 # Gemini model testing script
-├── package.json
-└── package-lock.json
-
----
 
 ## API Endpoints
 
