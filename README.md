@@ -30,9 +30,7 @@ The backend is the single source of truth for conversation state and planning lo
 ## Project Structure
 
 Backend/
-│
 ├── src/
-│   │
 │   ├── config/
 │   │   └── env.js                 # Environment variable configuration
 │   │
@@ -52,16 +50,16 @@ Backend/
 │   │
 │   ├── utils/                     # Core business logic
 │   │   ├── activityDataset.js
-│   │   ├── confidenceevaluator.js
-│   │   ├── constraintextractor.js
-│   │   ├── planningengine.js
+│   │   ├── confidenceEvaluator.js
+│   │   ├── constraintExtractor.js
+│   │   ├── planningEngine.js
 │   │   └── scheduleBuilder.js
 │   │
-│   ├── middleware/  
-       └── error.middleware.js
+│   ├── middleware/
+│   │   └── error.middleware.js
 │   │
 │   ├── app.js                     # Express app configuration
-│   └── server.js                  # Entry point
+│   └── server.js                  # Application entry point
 │
 ├── .env                           # Environment variables
 ├── list-models.js                 # Gemini model testing script
